@@ -1,0 +1,122 @@
+<link rel="stylesheet" href="vday.css">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valentines Day 2024</title>
+    </head>
+    <style>
+        body {
+    margin: 0;
+    padding: 16px;
+    height:100vh;
+    background: #ffc0cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valentines_card {
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 4s;
+}
+
+.front_img {
+    width: 450px;
+    margin-right: -50px;
+    margin-left: -50px; 
+    margin-top: 100px;
+    position: relative; 
+}
+
+.inside_img {
+    width: 350px;
+    margin-right: -50px;
+    margin-left: -50px; 
+    margin-top: 100px;
+    position: relative; 
+}
+
+.valentines_card:hover .front_card{
+    transform: rotateY(-160deg); 
+} 
+.valentines_card:hover .front_text {
+    display: none;
+}
+.front_text, .inside_text{
+    color: #A60657;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+}
+
+.front_card {
+    position: relative;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 16px;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #ff1493;
+    width: 450px;
+    height: 800px;
+}
+.inside_card {
+    position: absolute;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 16px;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #ff1493;
+    width: 450px;
+    height: 800px;
+    z-index:-1;
+    left:0;
+    top:0;
+
+}
+.valentines_card audio {
+    display: none;
+}
+
+.valentines_card:hover .front_img {
+    display: none;
+}
+.inside_card audio {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+    </style>
+    <body>
+    <div class="valentines_card">
+        <div class="front_card">
+            <img src="vday.png" class="front_img">
+            <div class="front_text">
+            <h3>Hello Mylabs, I'm sending this Valentine's Card to you because 
+                I want you to know how much I love you. Happy Valentines Day!
+            </h3>
+            </div>    
+        </div>
+        <div class="inside_card">
+            <img src="inside.png" class="inside_img">
+            <div>
+                <audio controls>
+                    <source src="Rex_Orange_County_-_THE_SHADE_(Lyrics)_[_YouConvert.net_].mp3" type="audio/mp3">
+                  </audio>  
+            </div>
+            <div class="inside_text">
+                <h4>Happy Valentines Mylabs you know how much I love you and sorry for the trouble and problem na
+                    gihatag nako sa imoha Mylabs but I promise to you that I will change for you and I will be a better person for you.
+                </h4>
+                <h3>Wishing you a Valentine's Day filled with all the joy and warmth you bring into my life!</h3>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
